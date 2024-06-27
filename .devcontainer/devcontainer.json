@@ -1,0 +1,13 @@
+{
+  "name": "Nuxt + Prisma + Postgres Dev Container",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [3000, 5432],
+  "postCreateCommand": "yarn install",
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "vue.volar", "prisma.prisma"]
+    }
+  }
+}
